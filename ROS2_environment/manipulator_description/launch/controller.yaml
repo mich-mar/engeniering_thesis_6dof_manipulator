@@ -1,0 +1,31 @@
+manipulator_final_before_export_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  base_to_1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_to_1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  1_to_2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 1_to_2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  2_to_3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 2_to_3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  3_to_4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 3_to_4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  4_to_5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: 4_to_5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Revolute 7_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Revolute 7
+    pid: {p: 100.0, i: 0.01, d: 10.0}

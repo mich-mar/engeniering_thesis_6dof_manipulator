@@ -1,0 +1,55 @@
+Praca może zawierać także tabele, które powinny być czytelne i dobrze opisane. Do wszystkich tabel i rysunków powinny pojawić się odwołania w tekście (oraz komentarze). Podpisy rysunków mają znaleźć się pod rysunkami, a podpisy tabel – nad tabelami. Tabela~\ref{tab:tab_example} stanowi przykład. 
+
+\begin{table}[H]
+    \centering
+        \caption{Krótki ale treściwy opis tabeli} \label{tab:tab_example} 
+        \begin{tabular}{lrrrr}
+        \toprule
+        Method &  anger &   joy &  optimism &  sadness \\
+        \midrule
+        model1 & 0.772 & \textbf{0.751} & \textbf{0.532} & 0.673 \\
+        model2 & 0.727 & 0.661 & 0.307 & 0.629 \\
+        model3 & 0.761 & 0.739 & 0.498 & \textbf{0.679} \\
+        model4 & \textbf{0.782} & 0.740 & 0.470 & 0.672 \\
+        \bottomrule
+        \end{tabular}
+\end{table}
+
+Warto także użyć gotowych generatorów do tabel (np. \url{https://www.tablesgenerator.com/}), niż formatować je samodzielnie. Mistrzem formatowania był Wojtek. Tabela~\ref{tab:main_results_sentence} o nieco zmienionej treści pochodzi z jego pracy. 
+
+\begin{table}[H]
+\centering
+\renewcommand*{\arraystretch}{1.3}
+\caption{Comparison of the compression methods considered for MultiEmo for the sentence level in the mixed domain scenario. The results are averaged on 5 repetitions. The best results are in \textbf{bold}.}
+\label{tab:main_results_sentence}
+\begin{tabular}{@{}
+l
+R{1.3cm}R{0.7cm}@{\hspace{0.1cm}}L{1.1cm}@{\hspace{8pt}}
+R{1.3cm}c@{\hspace{12pt}}
+cccc
+@{}} 
+\toprule
+\multicolumn{1}{c}{\textbf{Method}} &
+\multicolumn{1}{c}{\textbf{$\boldsymbol{\#}$Par.}} & 
+\multicolumn{2}{c@{\hspace{12pt}}}{
+\begin{tabular}[c]{@{}c@{}}\textbf{Mem.}\\\textbf{ [MB]}\end{tabular}} &
+\begin{tabular}[c]{@{}c@{}}\textbf{Train.}\\\textbf{ [min]}\end{tabular} & 
+\textbf{Eval [s]} & 
+\textbf{Acc.} &
+\textbf{F1}& 
+\textbf{Rec.}&
+\textbf{Prec.} \\ 
+\midrule
+Model$_\mathrm{BASE}$ & 109M & \multicolumn{2}{c@{\hspace{10pt}}}{418} & 26.0 & 13.9 & 78.8 & 74.7 & 74.1 & 75.8 \\ 
+\midrule
+Model1 & 67M & 255 & (1.6x) & 14.1 & 7.0 (2.0x) & 77.9 & 73.9 & 73.3 & \bftab{74.8} \\
+Model2 & \bftab{13M} & \bftab{49} & \bftab{(8.6x)} & 6.5 & 2.3 (6.2x) & 76.7 & 72.4 & 71.7 & 73.9 \\
+Model3$_{6, \mathrm{TA}}$ & 67M & 255 & (1.6x) & 14.1 & 7.2 (1.9x) & 77.7 & 73.8 & 73.5 & 74.3 \\
+Model3$_{6, \mathrm{TS}}$ & 68M & 258 & (1.6x) & 62.9 & 7.2 (1.9x) & \bftab{78.2} & \bftab{74.4} & \bftab{74.1} & 74.7 \\
+Model3$_{4, \mathrm{TA}}$ & 14M & 55 & (7.6x) & \bftab{5.5} & 2.1 (6.6x) & 76.3 & 72.0 & 71.1 & 73.7 \\
+Model3$_{4, \mathrm{TS}}$ & 15M & 56 & (7.5x) & 38.3 & \bftab{2.0 (6.9x)} & 76.3 & 72.2 & 71.5 & 73.4 \\
+Model4 & 67M & 255 & (1.6x) & 19.1 & 7.8 (1.8x) & 76.6 & 72.5 & 72.1 & 73.2 \\
+Model5 & 14M & 55 & (7.6x) & 121.5 & 3.4 (4.1x) & 77.5 & 72.9 & 72.2 & 74.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
