@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="manipulator" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find manipulator_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find manipulator_description)/urdf/manipulator.trans" />
+<xacro:include filename="$(find manipulator_description)/urdf/manipulator.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_1_1">
+  <inertial>
+    <origin xyz="-0.002447 -0.063 -0.001614" rpy="0 0 0"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.002447 -0.063 -0.001614" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.002447 -0.063 -0.001614" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_2_1">
+  <inertial>
+    <origin xyz="-0.002253 -0.078512 -0.004446" rpy="0 0 0"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.002253 -0.078512 -0.004446" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.002253 -0.078512 -0.004446" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_3_1">
+  <inertial>
+    <origin xyz="0.050046 -0.244073 -0.034207" rpy="0 0 0"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.050046 -0.244073 -0.034207" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.050046 -0.244073 -0.034207" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_4_1">
+  <inertial>
+    <origin xyz="0.07012 -0.305037 0.001482" rpy="0 0 0"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07012 -0.305037 0.001482" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07012 -0.305037 0.001482" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_5_1">
+  <inertial>
+    <origin xyz="0.035771108084248326 0.11289293638447143 -0.05402003742237102" rpy="0 0 0"/>
+    <mass value="0.1597609646775879"/>
+    <inertia ixx="5.6e-05" iyy="0.000103" izz="5.1e-05" ixy="-1e-06" iyz="-0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.174242 -0.19174 -0.050084" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.174242 -0.19174 -0.050084" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="efector_1">
+  <inertial>
+    <origin xyz="-0.031776908676389964 0.0007717709374218673 -0.002161999027492591" rpy="0 0 0"/>
+    <mass value="0.3963549799563405"/>
+    <inertia ixx="8e-05" iyy="0.000155" izz="0.00012" ixy="3e-06" iyz="-1e-06" ixz="4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.162881 -0.305491 0.006983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/efector_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.162881 -0.305491 0.006983" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find manipulator_description)/meshes/efector_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="joint_base_to_1" type="continuous">
+  <origin xyz="0.002447 0.063 0.001614" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link_1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="joint_1_to_2" type="continuous">
+  <origin xyz="-0.000194 0.015512 0.002832" rpy="0 0 0"/>
+  <parent link="link_1_1"/>
+  <child link="link_2_1"/>
+  <axis xyz="0.044167 0.0 -0.999024"/>
+</joint>
+
+<joint name="joint_2_to_3" type="continuous">
+  <origin xyz="-0.052299 0.165561 0.029761" rpy="0 0 0"/>
+  <parent link="link_2_1"/>
+  <child link="link_3_1"/>
+  <axis xyz="-0.044167 -0.0 0.999024"/>
+</joint>
+
+<joint name="joint_3_to_4" type="continuous">
+  <origin xyz="-0.020074 0.060964 -0.035689" rpy="0 0 0"/>
+  <parent link="link_3_1"/>
+  <child link="link_4_1"/>
+  <axis xyz="0.999021 0.002653 0.044167"/>
+</joint>
+
+<joint name="joint_4_to_5" type="continuous">
+  <origin xyz="-0.104122 -0.113297 0.051566" rpy="0 0 0"/>
+  <parent link="link_4_1"/>
+  <child link="link_5_1"/>
+  <axis xyz="0.044191 -0.009603 -0.998977"/>
+</joint>
+
+<joint name="joint_5_to_eff" type="continuous">
+  <origin xyz="0.011361 0.113751 -0.057067" rpy="0 0 0"/>
+  <parent link="link_5_1"/>
+  <child link="efector_1"/>
+  <axis xyz="0.998995 -0.007126 0.04426"/>
+</joint>
+
+</robot>

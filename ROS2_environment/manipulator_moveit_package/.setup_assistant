@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: manipulator_ros2_description
+    relative_path: urdf/manipulator_ros2.xacro
+  srdf:
+    relative_path: config/manipulator_ros2.srdf
+  package_settings:
+    author_name: Michal Markuzel
+    author_email: markuzel.michal@gmail.com
+    generated_timestamp: 1761493821
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

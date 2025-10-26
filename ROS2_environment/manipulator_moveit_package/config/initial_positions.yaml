@@ -1,0 +1,9 @@
+# Default initial positions for manipulator_ros2's ros2_control fake system
+
+initial_positions:
+  joint_1_to_2: 0
+  joint_2_to_3: 0
+  joint_3_to_4: 0
+  joint_4_to_5: 0
+  joint_5_to_eff: 0
+  joint_base_to_1: 0

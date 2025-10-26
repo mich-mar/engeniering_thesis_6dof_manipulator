@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-<name>manipulator_description</name>
+<name>manipulator_ros2_description</name>
   <version>0.0.0</version>
-<description>The manipulator_description package</description>
+<description>The manipulator_ros2_description package</description>
   <maintainer email="todo@todo.com">author</maintainer>
   <license>TODO: License declaration</license>
 
