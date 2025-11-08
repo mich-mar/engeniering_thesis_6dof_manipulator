@@ -1,0 +1,63 @@
+<svg width="800" height="520" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f9fafb" rx="10"></rect>
+
+  <!-- Title -->
+  <text x="50%" y="40" text-anchor="middle" font-size="22" font-family="sans-serif" fill="#111827">
+    ROS 2 Manipulator System Architecture
+  </text>
+
+  <!-- MoveIt Box -->
+  <rect x="150" y="80" width="500" height="110" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"></rect>
+  <text x="400" y="110" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#0c4a6e" font-weight="bold">
+    MoveIt 2 Simulation
+  </text>
+  <text x="400" y="130" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0c4a6e">
+    (manipulator_moveit_package)
+  </text>
+  <text x="400" y="155" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#0c4a6e">
+    • Motion planning, controllers, RViz integration
+  </text>
+  <text x="400" y="175" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#0c4a6e">
+    • Publishes /joint_states
+  </text>
+
+  <!-- Arrow 1 -->
+  <line x1="400" y1="190" x2="400" y2="250" stroke="#0f172a" stroke-width="2" marker-end="url(#arrowhead)"></line>
+  <text x="410" y="220" font-size="12" font-family="sans-serif" fill="#374151">/joint_states</text>
+
+  <!-- Joint Sender Box -->
+  <rect x="150" y="250" width="500" height="110" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"></rect>
+  <text x="400" y="280" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#14532d" font-weight="bold">
+    Joint Sender Node (C++)
+  </text>
+  <text x="400" y="300" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#14532d">
+    (joint_state_sender_cpp)
+  </text>
+  <text x="400" y="325" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#14532d">
+    • Subscribes to /joint_states
+  </text>
+  <text x="400" y="345" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#14532d">
+    • Converts radians → degrees and sends via UART
+  </text>
+
+  <!-- Arrow 2 -->
+  <line x1="400" y1="360" x2="400" y2="420" stroke="#0f172a" stroke-width="2" marker-end="url(#arrowhead)"></line>
+  <text x="410" y="390" font-size="12" font-family="sans-serif" fill="#374151">Serial /dev/ttyACM0</text>
+
+  <!-- Physical Manipulator Box -->
+  <rect x="150" y="420" width="500" height="80" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"></rect>
+  <text x="400" y="450" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#78350f" font-weight="bold">
+    Physical Manipulator – ESP32
+  </text>
+  <text x="400" y="470" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#78350f">
+    • Receives joint angles and drives actuators
+  </text>
+
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0f172a"></polygon>
+    </marker>
+  </defs>
+</svg>
