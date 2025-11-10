@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0" version="28.2.9">
+  <diagram name="Page-1" id="b520641d-4fe3-3701-9064-5fc419738815">
+    <mxGraphModel dx="1019" dy="797" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-12" value="System ROS2 - symulacja" style="swimlane;startSize=30;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fillColor=#A8DADC;strokeColor=#457B9D;rounded=1;fillStyle=auto;swimlaneFillColor=none;glass=0;shadow=0;fontColor=#1D3557;arcSize=30;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="50" width="420" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-13" value="" style="sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;fixDash=0;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" edge="1" parent="UVV9m5XnsUy8qduu7Xn_-12" source="UVV9m5XnsUy8qduu7Xn_-15" target="UVV9m5XnsUy8qduu7Xn_-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div&gt;MoveIt&lt;/div&gt;&lt;div&gt;Planowanie Ruchu&lt;/div&gt;" treeRoot="1" id="UVV9m5XnsUy8qduu7Xn_-15">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};arcSize=12;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="UVV9m5XnsUy8qduu7Xn_-12">
+            <mxGeometry x="20" y="40" width="140" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-16" value="&lt;div&gt;/joint_sender&lt;/div&gt;&lt;div&gt;ROS2 Topic&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fixDash=0;arcSize=12;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="UVV9m5XnsUy8qduu7Xn_-12">
+          <mxGeometry x="250" y="40" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-18" value="&lt;div&gt;joint_state_sender&lt;/div&gt;&lt;div&gt;(C++/UART NODE)&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};arcSize=12;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="UVV9m5XnsUy8qduu7Xn_-12">
+          <mxGeometry x="250" y="130" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-19" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=classic;rounded=0;curved=0;html=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" edge="1" target="UVV9m5XnsUy8qduu7Xn_-18" parent="UVV9m5XnsUy8qduu7Xn_-12" source="UVV9m5XnsUy8qduu7Xn_-16">
+          <mxGeometry x="-340" y="170" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-22" value="" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" edge="1" parent="UVV9m5XnsUy8qduu7Xn_-12" source="UVV9m5XnsUy8qduu7Xn_-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-220" y="70" as="sourcePoint" />
+            <mxPoint x="250.71067811865476" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-24" value="System embedded - sterownik ESP32" style="swimlane;startSize=30;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fillColor=#A8DADC;strokeColor=#457B9D;rounded=1;fillStyle=auto;swimlaneFillColor=none;glass=0;shadow=0;fontColor=#1D3557;arcSize=30;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="360" width="420" height="260" as="geometry">
+            <mxRectangle x="420" y="360" width="280" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-25" value="" style="sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;fixDash=0;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" edge="1" parent="UVV9m5XnsUy8qduu7Xn_-24" source="UVV9m5XnsUy8qduu7Xn_-26" target="UVV9m5XnsUy8qduu7Xn_-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-36" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" edge="1" parent="UVV9m5XnsUy8qduu7Xn_-24" source="UVV9m5XnsUy8qduu7Xn_-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="189.99999999999977" y="95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;div align=&quot;center&quot;&gt;ESP32 kontroler&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;(firmware oraz odbiór pozycji)&lt;/div&gt;" treeRoot="1" id="UVV9m5XnsUy8qduu7Xn_-26">
+          <mxCell style="whiteSpace=wrap;html=1;align=left;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};arcSize=12;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="UVV9m5XnsUy8qduu7Xn_-24">
+            <mxGeometry x="20" y="55" width="170" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-27" value="&lt;div&gt;Serwomechanizmy&lt;/div&gt;&lt;div&gt;manipulatora&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fixDash=0;arcSize=12;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="UVV9m5XnsUy8qduu7Xn_-24">
+          <mxGeometry x="250" y="65" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-28" value="&lt;div&gt;joint_state_sender&lt;/div&gt;&lt;div&gt;(C++/UART NODE)&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};arcSize=12;rounded=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="UVV9m5XnsUy8qduu7Xn_-24">
+          <mxGeometry x="250" y="160" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-29" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=classic;rounded=0;curved=0;html=1;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" edge="1" parent="UVV9m5XnsUy8qduu7Xn_-24" source="UVV9m5XnsUy8qduu7Xn_-27" target="UVV9m5XnsUy8qduu7Xn_-28">
+          <mxGeometry x="-340" y="170" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-30" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=default;" edge="1" parent="UVV9m5XnsUy8qduu7Xn_-24" source="UVV9m5XnsUy8qduu7Xn_-26" target="UVV9m5XnsUy8qduu7Xn_-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-220" y="70" as="sourcePoint" />
+            <mxPoint x="250.71067811865476" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-33" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#457B9D;labelBackgroundColor=none;fontColor=default;fillColor=#A8DADC;" edge="1" parent="1" source="UVV9m5XnsUy8qduu7Xn_-12" target="UVV9m5XnsUy8qduu7Xn_-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="260" as="sourcePoint" />
+            <mxPoint x="670" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-34" value="Transmisja UART" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=none;imageAlign=center;imageVerticalAlign=middle;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" connectable="0" parent="UVV9m5XnsUy8qduu7Xn_-33">
+          <mxGeometry x="-0.0301" y="-1" relative="1" as="geometry">
+            <mxPoint x="71" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-37" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#457B9D;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" target="UVV9m5XnsUy8qduu7Xn_-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="629.66" y="620" as="sourcePoint" />
+            <mxPoint x="629.66" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-50" value="Ruch fizycznego manipulatora" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fillColor=#A8DADC;labelBackgroundColor=none;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="1">
+          <mxGeometry x="420" y="680" width="420" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UVV9m5XnsUy8qduu7Xn_-51" value="&lt;div&gt;Efekt&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=none;imageAlign=center;imageVerticalAlign=middle;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="660" y="430" as="geometry">
+            <mxPoint x="6" y="216" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
