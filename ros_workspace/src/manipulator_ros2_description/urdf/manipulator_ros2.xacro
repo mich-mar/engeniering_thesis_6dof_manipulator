@@ -138,60 +138,66 @@
     <inertia ixx="0.000172" iyy="0.000208" izz="9.2e-05" ixy="-0.0" iyz="-4e-06" ixz="-7e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.000272 -0.000224 -0.46885" rpy="0 0 0"/>
+    <origin xyz="-0.000272 -0.000224 -0.46885" rpy="0 0 3.14159"/>
     <geometry>
       <mesh filename="file://$(find manipulator_ros2_description)/meshes/efector_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.000272 -0.000224 -0.46885" rpy="0 0 0"/>
+    <origin xyz="-0.000272 -0.000224 -0.46885" rpy="0 0 3.14159"/>
     <geometry>
       <mesh filename="file://$(find manipulator_ros2_description)/meshes/efector_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="joint_base_to_1" type="continuous">
+<joint name="joint_base_to_1" type="revolute">
   <origin xyz="0.0 0.0 0.063" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="link_1_1"/>
   <axis xyz="0.0 0.0 1.0"/>
+  <limit lower="-2.1293" upper="1.7802" effort="10.0" velocity="1.5"/>
 </joint>
 
-<joint name="joint_1_to_2" type="continuous">
+<joint name="joint_1_to_2" type="revolute">
   <origin xyz="-2.7e-05 -0.000565 0.072511" rpy="0 0 0"/>
   <parent link="link_1_1"/>
   <child link="link_2_1"/>
   <axis xyz="0.002718 -0.999996 0.0"/>
+  <limit lower="-2.2689" upper="2.4435" effort="10.0" velocity="1.5"/>
 </joint>
 
-<joint name="joint_2_to_3" type="continuous">
+<joint name="joint_2_to_3" type="revolute">
   <origin xyz="-4.7e-05 -0.0001 0.169422" rpy="0 0 0"/>
   <parent link="link_2_1"/>
   <child link="link_3_1"/>
   <axis xyz="0.002718 -0.999996 -0.0"/>
+  <limit lower="-2.4435" upper="2.2689" effort="10.0" velocity="1.5"/>
 </joint>
 
-<joint name="joint_3_to_4" type="continuous">
+<joint name="joint_3_to_4" type="revolute">
   <origin xyz="0.000208 0.0 0.071" rpy="0 0 0"/>
   <parent link="link_3_1"/>
   <child link="link_4_1"/>
   <axis xyz="0.002932 8e-06 0.999996"/>
+  <limit lower="-1.3963" upper="1.7453" effort="10.0" velocity="1.5"/>
 </joint>
 
-<joint name="joint_4_to_5" type="continuous">
+<joint name="joint_4_to_5" type="revolute">
   <origin xyz="0.000121 0.000888 0.04045" rpy="0 0 0"/>
   <parent link="link_4_1"/>
   <child link="link_5_1"/>
   <axis xyz="0.003099 0.999995 -1.7e-05"/>
+  <limit lower="-1.3963" upper="1.7453" effort="10.0" velocity="1.5"/>
 </joint>
 
-<joint name="joint_5_to_eff" type="continuous">
+<joint name="joint_5_to_eff" type="revolute">
   <origin xyz="1.7e-05 1e-06 0.052467" rpy="0 0 0"/>
   <parent link="link_5_1"/>
   <child link="efector_1"/>
   <axis xyz="-0.004131 -4e-06 -0.999991"/>
+  <limit lower="-1.5708" upper="1.5708" effort="10.0" velocity="1.5"/>
 </joint>
 
 </robot>

@@ -23,6 +23,10 @@ engeniering_thesis_6dof_manipulator/
 │
 ├── 3D_model/                  # CAD and STL models of each manipulator part
 │
+├── python_scripts/            # Helper scripts
+│   ├── kinematics_check.py    # Python script for D-H table check
+│   └── trans_calc.py          # Python script for symbolic calculations
+│
 ├── manipulator_controler/     # Firmware project for ESP32-S3 (PlatformIO)
 │   ├── src/main.cpp           # Main control logic
 │   ├── include/, lib/, test/  # Support files and headers

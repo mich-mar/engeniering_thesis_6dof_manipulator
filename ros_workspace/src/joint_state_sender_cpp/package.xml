@@ -4,7 +4,7 @@
   <name>joint_state_sender_cpp</name>
   <version>0.0.0</version>
   <description>A ROS 2 package that subscribes to /joint_states and transmits joint angle data (in degrees) over a serial (UART) connection. 
-Intended for integrating ROS-based robotic systems with external microcontrollers (e.g., Arduino) for motor control or actuator feedback.
+Intended for integrating ROS-based robotic systems with external microcontrollers (e.g., ESP32).
   </description>
   <maintainer email="markuzel.michal@gmail.com">root</maintainer>
   <license>Apache-2.0</license>

@@ -44,4 +44,4 @@ constexpr int servoPin5 = 37;
 // =========================
 
 constexpr unsigned long moveInterval = 0;
-constexpr float offsetMultipliers[6] = {-1.0, 1.0, -1.0, 1.0, 1.0, 1.0};
+constexpr float offsetMultipliers[6] = {1.0, 1.0, -1.0, 1.0, 1.0, 1.0};

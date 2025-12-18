@@ -2,14 +2,12 @@
 #include <sensor_msgs/msg/joint_state.hpp>
 #include <string>
 #include <vector>
-#include <cmath>      // For M_PI, std::round, std::abs
-#include <sstream>    // For building formatted output strings
-#include <functional> // For std::bind and std::placeholders
-
-// POSIX headers for serial communication on Linux
-#include <fcntl.h>   // File control options (O_RDWR, etc.)
-#include <termios.h> // POSIX terminal control definitions
-#include <unistd.h>  // For read(), write(), close()
+#include <cmath>
+#include <sstream>
+#include <functional>
+#include <fcntl.h>
+#include <termios.h>
+#include <unistd.h>
 
 // Serial port configuration
 const std::string SERIAL_PORT = "/dev/ttyACM0";

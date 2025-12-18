@@ -14,8 +14,6 @@ The project is designed for integration with a **serial command interface**, ena
 
 ```
 manipulator_controller/
-├── include/                  # Header files shared between modules
-├── lib/                      # External and user-defined libraries
 ├── src/                      # Main application source files
 │   ├── config/               # Configuration and constants
 │   │   ├── Constants.h       # Pin definitions, calibration values, limits
@@ -27,7 +25,6 @@ manipulator_controller/
 │   │   ├── SerialCommands.cpp # Command parsing and serial interface handling
 │   │   └── SerialCommands.h
 │   └── main.cpp              # Application entry point and main loop
-├── test/                     # Unit/integration tests (optional)
 └── platformio.ini            # PlatformIO configuration (build environment)
 ```
 
@@ -55,7 +52,6 @@ manipulator_controller/
 | `config/`             | Stores calibration constants and reference positions for servos      |
 | `control/`            | Implements motion logic and hybrid feedback control loop             |
 | `io/`                 | Handles command input over serial interface                          |
-| `utils/` *(optional)* | Provides reusable helper functions (math, filtering, clamping, etc.) |
 
 ---
 
